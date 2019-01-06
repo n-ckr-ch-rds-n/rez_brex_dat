@@ -25,7 +25,12 @@ class CSVProcessor {
         const originalCSV = await this.getData();
         const filtered = this.filterUnwantedCities(originalCSV, cities.cities);
         const cellsReplaced = this.replaceBlankCells(filtered);
-        return cellsReplaced;
+        return cellsReplaced.join("\n");
+    }
+
+    async writeCSV() {
+        const csv = await this.buildCSV();
+        await fs.writeFileSync("data.csv", csv);
     }
 }
 
@@ -39,4 +44,4 @@ const rows = [ [ 'pid', 'ans', 'city', 'deviceType' ],
 ];
 
 const csvp = new CSVProcessor();
-csvp.buildCSV();
+csvp.writeCSV();
