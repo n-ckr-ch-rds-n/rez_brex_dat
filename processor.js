@@ -4,10 +4,10 @@ const cities = require("./cities")
 class CSVProcessor {
     async getData() {
         return fs.readFileSync('FilletedData.csv')
-            .toString() // convert Buffer to string
-            .split('\n') // split string to lines
-            .map(e => e.trim()) // remove white spaces for each line
-            .map(e => e.split(',').map(e => e.trim())); // split each line to array
+            .toString()
+            .split('\n')
+            .map(e => e.trim())
+            .map(e => e.split(',').map(e => e.trim()));
 
     }
 
@@ -21,7 +21,12 @@ class CSVProcessor {
         return rows.filter(row => cities.includes(row[2]));
     }
 
-
+    async buildCSV() {
+        const originalCSV = await this.getData();
+        const filtered = this.filterUnwantedCities(originalCSV, cities.cities);
+        const cellsReplaced = this.replaceBlankCells(filtered);
+        return cellsReplaced;
+    }
 }
 
 const rows = [ [ 'pid', 'ans', 'city', 'deviceType' ],
@@ -34,5 +39,4 @@ const rows = [ [ 'pid', 'ans', 'city', 'deviceType' ],
 ];
 
 const csvp = new CSVProcessor();
-console.log(csvp.filterUnwantedCities(rows, cities.cities));
-
+csvp.buildCSV();
