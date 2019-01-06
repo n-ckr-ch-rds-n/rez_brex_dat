@@ -1,4 +1,5 @@
 const fs = require('fs');
+const cities = require("./cities")
 
 class CSVProcessor {
     async getData() {
@@ -16,6 +17,10 @@ class CSVProcessor {
         })
     }
 
+    filterUnwantedCities(rows, cities) {
+        return rows.filter(row => cities.includes(row[2]));
+    }
+
 
 }
 
@@ -24,8 +29,10 @@ const rows = [ [ 'pid', 'ans', 'city', 'deviceType' ],
     [ 'www.mirror.co.uk', '', '', 'mobile' ],
     [ 'www.chroniclelive.co.uk', '', 'Wallsend', 'mobile' ],
     [ 'www.bristolpost.co.uk', '', 'Bristol', 'mobile' ],
-    [ 'www.chroniclelive.co.uk', '', 'Solihull', '' ]];
+    [ 'www.chroniclelive.co.uk', '', 'Solihull', '' ],
+    [ 'www.chroniclelive.co.uk', '', 'Foobar', '' ]
+];
 
 const csvp = new CSVProcessor();
-console.log(csvp.replaceBlankCells(rows));
+console.log(csvp.filterUnwantedCities(rows, cities.cities));
 
