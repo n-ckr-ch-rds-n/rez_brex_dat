@@ -1,5 +1,5 @@
 library(randomForest)
-brexitdata <- read.csv("data.csv", header=FALSE)
+brexitdata <- read.csv("data.csv", header=FALSE, colClasses = c("factor"))
 set.seed(4543)
 # Random Forest relative importance of variables as predictors
 forest <- randomForest(V2 ~ V1 + V3 + V4, data=brexitdata, ntree=2000, keep.forest=TRUE, importance=TRUE)
