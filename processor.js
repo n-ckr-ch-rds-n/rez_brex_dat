@@ -2,8 +2,13 @@ const fs = require('fs');
 const cities = require("./cities")
 
 class CSVProcessor {
+    constructor(dataFile = "FilletedData.csv", cityMap = cities.cities) {
+        this.dataFile = dataFile;
+        this.cityMap = cityMap;
+    }
+
     async getData() {
-        return fs.readFileSync('FilletedData.csv')
+        return fs.readFileSync(this.dataFile)
             .toString()
             .split('\n')
             .map(e => e.trim())
@@ -21,11 +26,16 @@ class CSVProcessor {
         return rows.filter(row => cities.includes(row[2]));
     }
 
+    filterUnknowns(rows) {
+        return rows.filter(row => !row.includes("Unknown"));
+    }
+
     async buildCSV() {
         const originalCSV = await this.getData();
-        const filtered = this.filterUnwantedCities(originalCSV, cities.cities);
+        const filtered = this.filterUnwantedCities(originalCSV, this.cityMap);
         const cellsReplaced = this.replaceBlankCells(filtered);
-        return cellsReplaced.join("\n");
+        const noUnknowns = this.filterUnknowns(cellsReplaced);
+        return noUnknowns.join("\n");
     }
 
     async writeCSV() {
@@ -33,15 +43,6 @@ class CSVProcessor {
         await fs.writeFileSync("data.csv", csv);
     }
 }
-
-const rows = [ [ 'pid', 'ans', 'city', 'deviceType' ],
-    [ 'www.birminghampost.co.uk', '', 'Birmingham', 'mobile' ],
-    [ 'www.mirror.co.uk', '', '', 'mobile' ],
-    [ 'www.chroniclelive.co.uk', '', 'Wallsend', 'mobile' ],
-    [ 'www.bristolpost.co.uk', '', 'Bristol', 'mobile' ],
-    [ 'www.chroniclelive.co.uk', '', 'Solihull', '' ],
-    [ 'www.chroniclelive.co.uk', '', 'Foobar', '' ]
-];
 
 const csvp = new CSVProcessor();
 csvp.writeCSV();
