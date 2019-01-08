@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ddd39e7-fd34-46cf-b157-5266f0f77273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/randomforest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rfexplainer.script.r" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fitbitdata.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/papaparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/papaparse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/player/player.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/player/player.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/player/player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/long-sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/node-tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/test-cases.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/tests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/papaparse/tests/verylong-sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomforest.rscript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/randomforest.script.r" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomforest.R" beforeDir="false" afterPath="$PROJECT_DIR$/randomforest.R" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,7 +29,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="3" />
+          <entry key="csv" value="6" />
           <entry key="gitignore" value="1" />
           <entry key="js" value="2" />
           <entry key="json" value="1" />
@@ -60,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="3" />
+          <entry key="CSV" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -68,27 +47,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="59" />
-          <entry key="js" value="2059" />
+          <entry key="gitignore" value="74" />
+          <entry key="js" value="3107" />
           <entry key="r" value="94" />
           <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2059" />
-          <entry key="PLAIN_TEXT" value="181" />
+          <entry key="JavaScript" value="3107" />
+          <entry key="PLAIN_TEXT" value="196" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="60">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -96,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="310">
+              <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -105,24 +84,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-2352" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/randomforest.script.r">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" lean-forward="true" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="140">
+              <caret line="62819" column="34" lean-forward="true" selection-start-line="62819" selection-start-column="34" selection-end-line="62819" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rfexplainer.script.r">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fitbitdata.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="579">
+              <caret line="138706" column="48" selection-start-line="138706" selection-start-column="48" selection-end-line="138706" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -139,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="225">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -169,12 +141,13 @@
       <list>
         <option value="$PROJECT_DIR$/cities.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/processor.js" />
         <option value="$PROJECT_DIR$/randomforest.rscript.txt" />
         <option value="$PROJECT_DIR$/randomforest.js" />
         <option value="$PROJECT_DIR$/randomforest.rscript.r" />
         <option value="$PROJECT_DIR$/rfexplainer.script.r" />
+        <option value="$PROJECT_DIR$/processor.js" />
+        <option value="$PROJECT_DIR$/fitbitdata.csv" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -201,9 +174,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
+    <option name="x" value="41" />
     <option name="y" value="23" />
-    <option name="width" value="1286" />
+    <option name="width" value="1157" />
     <option name="height" value="816" />
   </component>
   <component name="ProjectView">
@@ -259,18 +232,18 @@
       <option name="presentableId" value="Default" />
       <updated>1546777759486</updated>
       <workItem from="1546777762500" duration="67000" />
-      <workItem from="1546854129237" duration="5002000" />
+      <workItem from="1546854129237" duration="13031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13345000" />
+    <option name="totallyTimeSpent" value="21374000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="23" width="1286" height="816" extended-state="0" />
+    <frame x="41" y="23" width="1157" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23952569" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26672536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -289,6 +262,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26672536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37845305" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -297,46 +290,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brexit_data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-2352" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/randomforest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -351,6 +308,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brexit_data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomforest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fitbitdata.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="579">
+          <caret line="138706" column="48" selection-start-line="138706" selection-start-column="48" selection-end-line="138706" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="140">
+          <caret line="62819" column="34" lean-forward="true" selection-start-line="62819" selection-start-column="34" selection-end-line="62819" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
